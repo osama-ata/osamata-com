@@ -1,0 +1,46 @@
+import React from 'react';
+
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+
+
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+//import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
+import Layout from '@theme/Layout';
+
+
+import Heading from '@theme/Heading';
+import styles from './index.module.css';
+
+// Header Component
+
+function AboutHeader() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
+        </Heading>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+      </div>
+    </header>
+  );
+}
+
+// About Component
+export default function About() {
+  //const {siteConfig} = useDocusaurusContext();
+  return (
+    <Layout
+      title={`About`}
+      description="Description will go into a meta tag in <head />">
+      <AboutHeader />
+      <main>
+      <div>This is the About page!</div>
+
+      </main>
+    </Layout>
+  );
+}

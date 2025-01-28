@@ -1,0 +1,42 @@
+/* src/pages/landing.module.css */
+.header {
+    background: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #666;
+  }
+  
+  .main {
+    padding: 2rem 1rem;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section p {
+    margin-bottom: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  

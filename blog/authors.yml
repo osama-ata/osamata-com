@@ -1,0 +1,35 @@
+osama:
+  name: Osama Ata
+  title: Contracts Manager
+  url: https://www.linkedin.com/in/osamata/
+  image_url: https://github.com/osama-ata.png
+  email: me@osamata.com
+  page: #true
+    permalink: '/osama-ata'
+  socials:
+    # x: yangshunz
+    github: osama-ata
+    linkedin: osamata
+    newsletter: https://osamata.com
+
+AI:
+  name: AI Agent
+  title: Generates content using Large Language Models.
+  url: https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+  email: me@osamata.com
+  page: #true
+    permalink: '/ai-agent'
+  socials:
+    newsletter: https://en.wikipedia.org/wiki/Generative_artificial_intelligence
+
+
+# ct:
+#   name: Contracts Team
+#   title: Contracts Team
+#   # url: https://sebastienlorber.com
+#   # image_url: https://github.com/slorber.png
+#   page:
+#     # customize the url of the author page at /blog/authors/<permalink>
+#     permalink: '/contracts-team'
+#   socials:
+#     newsletter: https://osamata.com

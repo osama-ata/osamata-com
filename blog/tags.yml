@@ -1,0 +1,35 @@
+
+Authors:
+  label: Authors
+  permalink: /authors
+  description: The Authors of this website
+
+Personal Development:
+  label: Personal Development
+  permalink: /Personal-Development
+  description: Personal Development and Self Improvement Articles
+
+FIDIC:
+  label: FIDIC
+  permalink: /FIDIC
+  description: FIDIC forms of contract Articles
+
+AI Generated:
+  label: AI Generated
+  permalink: /AI-Generated
+  description: AI Generated Articles
+
+Claims:
+  label: Claims
+  permalink: /Claims
+  description: Claims Management Articles
+
+Contracts:
+  label: Contracts
+  permalink: /Contracts
+  description: Contracts Management Articles
+
+Dispute Resolution:
+  label: Dispute Resolution
+  permalink: /Dispute-Resolution
+  description: Dispute Resolution Articles

@@ -1,0 +1,125 @@
+  structuredData: {
+    excludedRoutes: [], // array of routes to exclude from structured data generation, include custom redirects here
+    verbose: true, // enable verbose output for debugging (default: false)
+    featuredImageDimensions: {
+      width: 1200,
+      height: 630,
+    },
+    authors: {
+      author_name: {
+        authorId: "osama", // unique id for the author - used as an identifier in structured data
+        url: "https://osamata.com", // MUST be the same as the `url` property in the `authors.yml` file in the `blog` directory
+        imageUrl: "https://github.com/osama-ata.png", // gravatar url
+        sameAs: [
+          "https://www.linkedin.com/in/osamata",
+          "https://github.com/osama-ata"
+        ] // synonymous entity links, e.g., GitHub, LinkedIn, etc.
+      },
+    },
+    organization: {
+      "@type": "Organization",
+      name: "Osama Construction Contracts and Claims Consultancy", // Full organization name
+      url: "https://osamata.com", // Organization's main website
+      logo: "https://osamata.com/logo.png", // URL for the company logo
+      sameAs: [
+        "https://www.linkedin.com/company/osama-consultancy",
+        "https://github.com/osama-consultancy",
+        "https://twitter.com/osama_consultancy"
+      ], // Social media or other profiles
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+966-123-456-7890", // Business contact number
+          contactType: "customer service", // Type of contact point
+          email: "contact@osamata.com", // Contact email
+          areaServed: "SA", // Service area (ISO 3166-1 Alpha-2 code for Saudi Arabia)
+          availableLanguage: ["en", "ar"] // Supported languages
+        }
+      ],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "123 King Fahd Road",
+        addressLocality: "Riyadh",
+        addressRegion: "Riyadh Province",
+        postalCode: "12345",
+        addressCountry: "SA" // Saudi Arabia
+      },
+      foundingDate: "2020-01-01", // When the company was established
+      founders: [
+        {
+          "@type": "Person",
+          name: "Osama Ata", // Founder name
+          url: "https://osamata.com/about", // Link to the founder's profile or bio
+        }
+      ],
+      department: [
+        {
+          "@type": "Organization",
+          name: "Claims Management Division", // Specific division name
+          url: "https://osamata.com/claims" // Division-specific URL
+        },
+        {
+          "@type": "Organization",
+          name: "Contracts Advisory Division", // Another division name
+          url: "https://osamata.com/contracts" // Division-specific URL
+        }
+      ],
+      makesOffer: [
+        {
+          "@type": "Offer",
+          name: "Claims Analysis and Resolution",
+          description: "Expert advice and support on construction claims analysis and dispute resolution.",
+          url: "https://osamata.com/services/claims"
+        },
+        {
+          "@type": "Offer",
+          name: "Contract Drafting and Review",
+          description: "Tailored contract drafting and review services to minimize disputes.",
+          url: "https://osamata.com/services/contracts"
+        }
+      ]
+    },
+    website: {
+      "@type": "WebSite",
+      url: "https://osamata.com", // Base URL of the website
+      name: "Osama Construction Contracts and Claims Consultancy", // Name of the website
+      inLanguage: "en-US", // Default language of the website
+      description: "Expert consultancy for construction contracts, claims management, and dispute resolution. Providing services tailored to the construction industry.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://osamata.com/search?q={search_term_string}", // URL for search functionality
+        "query-input": "required name=search_term_string"
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Osama Construction Contracts and Claims Consultancy", // Organization name as the publisher
+        url: "https://osamata.com", // Organization's URL
+        logo: "https://osamata.com/logo.png" // Organization logo
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/osama-consultancy",
+        "https://github.com/osama-consultancy",
+        "https://twitter.com/osama_consultancy"
+      ],
+      license: "https://osamata.com/terms-and-conditions", // Link to terms and conditions or licensing details
+      keywords: [
+        "construction contracts",
+        "claims management",
+        "dispute resolution",
+        "construction consultancy",
+        "contract drafting"
+      ] // Relevant keywords to boost search visibility
+    },
+    webpage: {
+      datePublished: "2023-01-01", // Default publish date
+      dateModified: "2025-01-15", // Default modification date
+      inLanguage: "en-US" // Default language
+    },
+    breadcrumbLabelMap: {
+      "/": "Home",
+      "/about": "About Us",
+      "/blog": "Blog",
+      "/blog/:slug": "Blog Post"
+    } // Custom breadcrumb labels
+  }
+

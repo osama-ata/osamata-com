@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700">
+  <title>Contracts Management</title>
+  <g id="doc_1" data-name="Doc" transform="translate(-250 -120) scale(1.5)">
+<!--Document Symbol-->
+    <rect x="200" y="100" width="200" height="300" fill="#e0e0e0" stroke="#4d3069" stroke-width="4" rx="10"/>
+    <line x1="220" y1="140" x2="380" y2="140" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="180" x2="380" y2="180" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="220" x2="300" y2="220" stroke="#4d3069" stroke-width="3"/>
+  </g>
+  <g id="doc_2" data-name="Doc" transform="translate(-115 -20) scale(1.5)">
+<!--Document Symbol-->
+    <rect x="200" y="100" width="200" height="300" fill="#e0e0e0" stroke="#4d3069" stroke-width="4" rx="10"/>
+    <line x1="220" y1="140" x2="380" y2="140" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="180" x2="380" y2="180" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="220" x2="300" y2="220" stroke="#4d3069" stroke-width="3"/>
+  </g>
+  <g id="doc_3" data-name="Doc" transform="translate(20 80) scale(1.5)">
+<!--Document Symbol-->
+    <rect x="200" y="100" width="200" height="300" fill="#e0e0e0" stroke="#4d3069" stroke-width="4" rx="10"/>
+    <line x1="220" y1="140" x2="380" y2="140" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="180" x2="380" y2="180" stroke="#4d3069" stroke-width="3"/>
+    <line x1="220" y1="220" x2="300" y2="220" stroke="#4d3069" stroke-width="3"/>
+  </g>
+</svg>
