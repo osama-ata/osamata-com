@@ -99,15 +99,13 @@ const config = {
           showLastUpdateTime: false,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          // customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
   ],
 
-  plugins: [
-    '@stackql/docusaurus-plugin-structured-data'
-  ],
+  plugins: [],
 
 
 
@@ -182,30 +180,6 @@ const config = {
       metadata: [
         { name: 'keywords', content: 'Contracts, Legal, Construction, Saudi Arabia' },
       ],
-      structuredData: {
-        excludedRoutes: [
-          '/providers',
-        ],
-        verbose: true,
-        featuredImageDimensions: {
-          width: 1200,
-          height: 627,
-        },
-
-        authors: {
-          "Osama Ata": {
-            authorId: "Osama Ata",
-            url: "https://www.linkedin.com/in/osamata/", // MUST be the same as the `url` property in the `authors.yml` file in the `blog` directory
-            imageUrl: "https://github.com/osama-ata.png", // gravatar url
-            sameAs: [] // synonymous entity links, e.g. github, linkedin, twitter, etc.
-          },
-
-          // authors:{} = structuredDataFile.authors,
-          // organization: structuredDataFile.organization,
-          // website: structuredDataFile.website,
-          // webpage: structuredDataFile.webpage,
-        },
-      },
 
       mermaid: {
         // theme: {light: 'base', dark: 'dark'},

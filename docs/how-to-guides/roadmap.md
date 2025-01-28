@@ -1,12 +1,12 @@
 ---
 # id: roadmap
-title: Roadmap 
+title: How-to Guides Roadmap
 hide_title: false
 hide_table_of_contents: false
 sidebar_position: 1
 #sidebar_label: Roadmap
 # pagination_label: Roadmap
-description: A Roadmap for this section.
+description: A Roadmap for How-to Guides articles.
 keywords:
   - Roadmap
 tags: [Roadmap]

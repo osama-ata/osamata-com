@@ -1,12 +1,12 @@
 ---
 # id: roadmap
-title: Roadmap 
+title: Explantations and Discussions Roadmap
 hide_title: false
 hide_table_of_contents: false
 sidebar_position: 1
 #sidebar_label: Roadmap
 # pagination_label: Roadmap
-description: A Roadmap for this section.
+description: A Roadmap for Explantations and Discussions articles.
 keywords:
   - Roadmap
 tags: [Roadmap]
