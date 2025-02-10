@@ -200,6 +200,12 @@ const config = {
       },
 
     }),
+
+  scripts: [
+    '/jsonld.js', // ✅ This will load the script from the static folder
+  ],
+
+
 }
 
 export default config;
