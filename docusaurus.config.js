@@ -178,7 +178,13 @@ const config = {
       },
 
       metadata: [
-        { name: 'keywords', content: 'Contracts, Legal, Construction, Saudi Arabia' },
+        { name: 'keywords', content: 'Osama Ata, Contracts, Claims, Legal, Construction, FIDIC, Saudi Arabia' },
+        { name: "og:image", content: "https://osamata.com/apple-touch-icon.png" },
+        { property: "og:type", content: "profile" },
+        { property: "profile:first_name", content: "Osama" },
+        { property: "profile:last_name", content: "Ata" },
+        { property: "profile:username", content: "osamata" },
+        { property: "profile:gender", content: "male" },
       ],
 
       mermaid: {
