@@ -1,5 +1,5 @@
 ---
-slug: water-purchase-agreement-WPA
+slug: ppp/water-purchase-agreement-WPA
 title: What is the Water Purchase Agreement (WPA) in PPP Projects?
 authors: osama
 tags:
