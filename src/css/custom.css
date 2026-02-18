@@ -20,3 +20,8 @@
   --ifm-footer-link-hover-color: rgba(0, 71, 177, 0.49);
   --ifm-footer-title-color	: rgba(255, 255, 255,1);
 }
+
+/* Apply Infima's text--justify to all markdown content (docs, blog, pages) */
+.markdown {
+  text-align: justify;
+}
