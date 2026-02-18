@@ -31,12 +31,19 @@ const config = {
   // projectName: 'docusaurus', // Usually your repo name.
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
   themes: ['@docusaurus/theme-mermaid'],
 
 
+  future: {
+    experimental_faster: true,
+    v4: true,
+  },
+
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -99,15 +106,28 @@ const config = {
           showLastUpdateTime: false,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       },
     ],
   ],
 
-  plugins: [],
-
-
+  plugins: [
+    // Suppress benign "critical dependency" warning from vscode-languageserver-types
+    // (transitive dep: theme-mermaid → mermaid → langium → vscode-languageserver, uses UMD dynamic require)
+    function suppressVSCodeWarning() {
+      return {
+        name: 'suppress-vscode-languageserver-webpack-warning',
+        configureWebpack() {
+          return {
+            ignoreWarnings: [
+              /Critical dependency: require function is used/,
+            ],
+          };
+        },
+      };
+    },
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
