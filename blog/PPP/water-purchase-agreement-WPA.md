@@ -15,7 +15,7 @@ date: 2025-04-24
 
 In the realm of Public-Private Partnerships (PPPs) within the water sector, particularly for essential infrastructure like desalination plants, the **Water Purchase Agreement (WPA)** stands as a foundational contract. A WPA is a long-term agreement between a public sector entity (the procurer) and a private sector entity (the project company) wherein the procurer commits to purchasing the water output of a facility built and operated by the project company. From a contract management perspective, the WPA is not merely a transaction document; it is the **central pillar governing the entire lifecycle of the PPP project**, dictating obligations, revenues, and risk allocation. Effective contract management of WPAs is paramount for ensuring both the financial viability of the project company and the security of water supply for the public. This article delves into the critical aspects of Water Purchase Agreements in PPPs, viewed through the lens of contract management best practices.
 
-{/truncate/}
+<!-- truncate -->
 
 ## **The Anatomy of a Water Purchase Agreement in a PPP**
 
