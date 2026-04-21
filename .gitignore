@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# AI/doc tooling local artifacts
+/.frontmatter
+/llms-txt
+/llms.txt
+/llms-full.txt

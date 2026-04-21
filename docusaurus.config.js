@@ -30,6 +30,7 @@ const config = {
   // organizationName: 'facebook', // Usually your GitHub org/user name.
   // projectName: 'docusaurus', // Usually your repo name.
   markdown: {
+    format: 'detect',
     mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -37,9 +38,16 @@ const config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
 
+  storage: {
+    type: 'localStorage',
+    namespace: true,
+  },
+
 
   future: {
-    experimental_faster: true,
+    faster: {
+      gitEagerVcs: true,
+    },
     v4: true,
   },
 
@@ -113,6 +121,22 @@ const config = {
   ],
 
   plugins: [
+    [
+      '@signalwire/docusaurus-plugin-llms-txt',
+      {
+        siteTitle: 'Osama Ata',
+        siteDescription: 'Construction contracts, claims, and PPP documentation.',
+        depth: 2,
+        content: {
+          enableMarkdownFiles: true,
+          relativePaths: true,
+          includeDocs: true,
+          includeBlog: true,
+          includePages: true,
+          enableLlmsFullTxt: true,
+        },
+      },
+    ],
     // Suppress benign "critical dependency" warning from vscode-languageserver-types
     // (transitive dep: theme-mermaid → mermaid → langium → vscode-languageserver, uses UMD dynamic require)
     function suppressVSCodeWarning() {
