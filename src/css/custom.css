@@ -4,24 +4,166 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Source+Code+Pro:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap');
+
 :root {
-  --ifm-color-primary: #4d3069;
-  --ifm-color-primary-dark: #462b5f;
-  --ifm-color-primary-darker: #422759;
-  --ifm-color-primary-darkest: #39214b;
-  --ifm-color-primary-light: #55376f;
-  --ifm-color-primary-lighter: #5a3c76;
-  --ifm-color-primary-lightest: #6b4a87;
+  --oa-parchment: #f5f4ed;
+  --oa-ivory: #faf9f5;
+  --oa-near-black: #141413;
+  --oa-terracotta: #c96442;
+  --oa-coral: #d97757;
+  --oa-charcoal-warm: #4d4c48;
+  --oa-olive-gray: #5e5d59;
+  --oa-stone-gray: #87867f;
+  --oa-border-cream: #f0eee6;
+  --oa-border-warm: #e8e6dc;
+  --oa-dark-surface: #30302e;
+  --oa-warm-silver: #b0aea5;
+  --oa-ring-warm: #d1cfc5;
+  --oa-ring-deep: #c2c0b6;
+  --oa-focus-blue: #3898ec;
+
+  --ifm-color-primary: #c96442;
+  --ifm-color-primary-dark: #bc5a35;
+  --ifm-color-primary-darker: #b0532e;
+  --ifm-color-primary-darkest: #954224;
+  --ifm-color-primary-light: #cf7150;
+  --ifm-color-primary-lighter: #d67d5f;
+  --ifm-color-primary-lightest: #df947a;
+  --ifm-background-color: var(--oa-parchment);
+  --ifm-background-surface-color: var(--oa-ivory);
+  --ifm-font-family-base: 'Source Sans 3', Arial, sans-serif;
+  --ifm-font-family-monospace: 'Source Code Pro', monospace;
+  --ifm-heading-font-family: 'Lora', Georgia, serif;
+  --ifm-font-color-base: var(--oa-near-black);
+  --ifm-link-color: var(--oa-coral);
+  --ifm-link-hover-color: var(--oa-terracotta);
+  --ifm-heading-color: var(--oa-near-black);
+  --ifm-navbar-background-color: var(--oa-parchment);
+  --ifm-navbar-link-color: var(--oa-olive-gray);
+  --ifm-navbar-link-hover-color: var(--oa-near-black);
+  --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: var(--oa-near-black);
+  --ifm-footer-color: var(--oa-warm-silver);
+  --ifm-footer-link-color: #faf9f5;
+  --ifm-footer-link-hover-color: #d1cfc5;
+  --ifm-footer-title-color: #faf9f5;
+  --ifm-global-radius: 12px;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-footer-background-color: #4d3069;
-  --ifm-footer-color	: rgba(255, 255, 255,1);
-  --ifm-footer-link-color	: #f2d3f8;
-  --ifm-footer-link-hover-color: rgba(0, 71, 177, 0.49);
-  --ifm-footer-title-color	: rgba(255, 255, 255,1);
 }
 
-/* Apply Infima's text--justify to all markdown content (docs, blog, pages) */
+html,
+body {
+  background: var(--oa-parchment);
+  color: var(--oa-near-black);
+}
+
+.main-wrapper {
+  background: var(--oa-parchment);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--oa-border-cream);
+}
+
+.navbar__title {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero__title {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.2;
+}
+
+h1,
+.hero__title {
+  line-height: 1.1;
+}
+
+p,
+li,
+.hero__subtitle,
+.markdown {
+  color: var(--oa-olive-gray);
+  line-height: 1.6;
+}
+
+.card,
+.theme-doc-markdown,
+.theme-blog-list-page article {
+  background: var(--oa-ivory);
+  border: 1px solid var(--oa-border-cream);
+  border-radius: 16px;
+}
+
+.button {
+  border: 0;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background: var(--oa-terracotta);
+  color: var(--oa-ivory);
+  box-shadow: 0 0 0 1px var(--oa-terracotta);
+}
+
+.button--primary:hover {
+  background: var(--oa-coral);
+  color: var(--oa-ivory);
+  box-shadow: 0 0 0 1px var(--oa-coral);
+}
+
+.button--secondary {
+  background: var(--oa-border-warm);
+  color: var(--oa-charcoal-warm);
+  box-shadow: 0 0 0 1px var(--oa-ring-warm);
+}
+
+.button--secondary:hover {
+  background: #e2e0d5;
+  color: var(--oa-near-black);
+  box-shadow: 0 0 0 1px var(--oa-ring-deep);
+}
+
+.button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--oa-focus-blue);
+  outline-offset: 2px;
+}
+
+a {
+  text-decoration-color: rgba(201, 100, 66, 0.35);
+  text-underline-offset: 2px;
+}
+
+@media screen and (max-width: 996px) {
+
+  h1,
+  .hero__title {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+}
+
+/* Keep markdown passages easy to scan while preserving editorial feel. */
 .markdown {
   text-align: justify;
 }

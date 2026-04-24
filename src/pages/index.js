@@ -12,12 +12,12 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1">
+    <header className={styles.heroBanner}>
+      <div className={clsx('container', styles.heroInner)}>
+        <Heading as="h1" className={styles.heroTitle}>
           Driving Contracts and Claims Success with Expertise, Leadership, and Technology
         </Heading>
-        <p className="hero__subtitle">
+        <p className={styles.heroSubtitle}>
           Transforming construction contract management and claims handling through
           leadership, technology-driven solutions, and optimized processes for sustainable results.
         </p>

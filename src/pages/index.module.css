@@ -4,15 +4,36 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  background: linear-gradient(180deg, #f5f4ed 0%, #f0eee6 100%);
+  border-bottom: 1px solid #e8e6dc;
+  padding: 7rem 0 6rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
+.heroInner {
+  max-width: 980px;
+}
+
+.heroTitle {
+  color: #141413;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+.heroSubtitle {
+  color: #5e5d59;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 860px;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 1.25rem;
   }
 }
 
