@@ -1,0 +1,44 @@
+# robots.txt for https://osamata.com
+# RFC 9309 compliant
+
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-train=no, ai-input=no
+Sitemap: https://osamata.com/sitemap.xml
+
+# AI crawlers — disallowed per content policy
+User-agent: GPTBot
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: OAI-SearchBot
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: Claude-Web
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: Google-Extended
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: Amazonbot
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: anthropic-ai
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: Bytespider
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: CCBot
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
+
+User-agent: Applebot-Extended
+Disallow: /
+Content-Signal: ai-train=no, ai-input=no
