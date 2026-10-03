@@ -10,14 +10,18 @@ script.text = JSON.stringify(
         "url": "https://osamata.com/cv/",
         "sameAs": [
             "https://www.wikidata.org/wiki/Q132189472",
-            "https://linkedin.com/in/osamata",
-            "https://github.com/osama-ata"
+            "https://www.linkedin.com/in/osamata",
+            "https://github.com/osama-ata",
+            "https://orcid.org/0009-0006-2951-5712",
+            "https://www.ciarb.org/member-directory/profile/?id=f2c4f170-ad4c-ea11-a812-000d3a86ad30"
         ],
         "jobTitle": "Contracts Manager",
         "worksFor": {
             "@type": "Organization",
-            "name": "Construction Company"
+            "@id": "https://www.wikidata.org/entity/Q4786967",
+            "name": "Archirodon"
         },
+        "alternateName": "Osama Mostafa",
         "alumniOf": [
             {
                 "@type": "EducationalOrganization",
