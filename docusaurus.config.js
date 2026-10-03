@@ -6,6 +6,7 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 import remarkDefList from 'remark-deflist';
+import personJsonLd from './person-jsonld.mjs';
 
 
 
@@ -251,8 +252,12 @@ const config = {
 
     }),
 
-  scripts: [
-    '/jsonld.js', // ✅ This will load the script from the static folder
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify(personJsonLd),
+    },
   ],
 
 

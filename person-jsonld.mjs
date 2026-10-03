@@ -1,8 +1,5 @@
-const script = document.createElement('script');
-script.type = 'application/ld+json';
-script.text = JSON.stringify(
-
-    {
+// Person structured data, injected statically into <head> via headTags in docusaurus.config.js
+const personJsonLd = {
         "@context": "https://schema.org",
         "@type": "Person",
         "@id": "https://www.wikidata.org/entity/Q132189472",
@@ -73,8 +70,6 @@ script.text = JSON.stringify(
                 "url": "http://eea.org.eg/"
             }
         ]
-    }
+    };
 
-
-);
-document.head.appendChild(script);
+export default personJsonLd;
