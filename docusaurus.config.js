@@ -123,6 +123,12 @@ const config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [{ from: '/about', to: '/services' }],
+      },
+    ],
+    [
       '@signalwire/docusaurus-plugin-llms-txt',
       {
         siteTitle: 'Osama Ata',
