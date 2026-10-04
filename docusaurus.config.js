@@ -174,6 +174,7 @@ const config = {
         items: [
           { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Learn' },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/services', label: 'Services', position: 'left' },
           { to: '/about', label: 'About', position: 'left' },
           // {type: 'localeDropdown'},
           // {href: 'https://www.linkedin.com/in/osamata/', label: 'LinkedIn', position: 'right'},
@@ -203,7 +204,7 @@ const config = {
           {
             title: 'Services',
             items: [
-              { label: 'Coming soon', to: '#' },
+              { label: 'Contracts & Claims Support', to: '/services' },
             ],
           },
           {

@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import Layout from '@theme/Layout';
 import IntroductionSection from '../components/IntroSection';
+import ProofSection from '../components/ProofSection';
 import SEOComp from '../components/SEOComp';
 
 import Heading from '@theme/Heading';
@@ -38,6 +39,7 @@ export default function Home() {
 
       <main>
         <IntroductionSection />
+        <ProofSection />
       </main>
     </Layout>
   );
